@@ -27,11 +27,12 @@
   }
 
   @media (max-width: 768px) {
-    background-image: url(../images/hero_celular.jpeg);
+    background-image: url(../images/marvel/mobile_marvel.png);
     padding-top: calc(50vw + 25px);
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -55px;
+    margin-bottom: 25px;
   }
 
   .button {
@@ -70,10 +71,20 @@
     .title--big {
       margin-bottom: 20px;
       font-size: 3rem;
+
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 2rem;
+      }
     }
     p {
       font-size: 1.5rem;
       margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 1rem;
+      }
 
       &:last-child {
         margin-top: 60px;
@@ -90,8 +101,8 @@
         width: calc(50% - 12px);
 
         @media (max-width: 768px) {
-          width: 100%;
-          margin-bottom: 24px;
+          width: 100%; 
+          margin-bottom: 10px;
         }
 
         img {

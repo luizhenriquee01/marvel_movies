@@ -1,12 +1,9 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
-@use 'plans';
-@use 'available-devices';
-@use 'faq';
-@use 'footer';
 @use 'header';
 @use 'timeLine';
+@use 'full_screen_banner';
 
 @font-face {
   font-family: Avenir;
@@ -120,8 +117,8 @@ body {
     border-color: variaveis.$corDeFundoBotaoSecundario;
 
     &:hover {
-      background-color: lighten(variaveis.$corTextoSecundario, 3%);
-      color: variaveis.$corDeFundo;
+      background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+      color: variaveis.$corTextoSecundario;
     }
   }
 }

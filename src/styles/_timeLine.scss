@@ -1,9 +1,14 @@
 @use 'shows';
 @use 'variaveis';
+@use 'hero';
 
 .timeline {
   padding: 20px;
   background-color: variaveis.$corDeFundo;
+
+  @media (max-width: 768px) {
+    padding: 5px;
+  }
 }
 
 .section-header {
@@ -14,16 +19,26 @@
   color: white;
   border-radius: 10px;
 }
-
+/*
 .title--big {
   font-size: 2em;
   margin: 0;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
 }
+*/
 
 .subtitle {
   font-size: 1em;
   margin-top: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 0.5rem;
+  }
 }
 
 .timeline__content {
@@ -43,6 +58,7 @@
   width: 80%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
