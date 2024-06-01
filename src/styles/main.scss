@@ -6,6 +6,7 @@
 @use 'faq';
 @use 'footer';
 @use 'header';
+@use 'timeLine';
 
 @font-face {
   font-family: Avenir;
@@ -98,13 +99,13 @@ body {
   height: 60px;
   font-size: 18px;
   color: variaveis.$corTextoSecundario;
-  background-color: variaveis.$corDeFundoBotaoPrimario;
+  background-color: variaveis.$corDeFundoBotaoSecundario;
   text-transform: uppercase;
   border-radius: 4px;
   text-decoration: none;
   padding: 8px 14px;
   letter-spacing: 1px;
-  border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+  border: 1px solid variaveis.$corDeFundoBotaoSecundario;
 
   &:hover {
     background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
@@ -115,8 +116,8 @@ body {
     border-color: variaveis.$corDeFundoBotaoSecundario;
   }
   &--dark {
-    background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
-    border-color: variaveis.$corTextoSecundario;
+    background-color: rgba(variaveis.$corDeFundoBotaoPrimario, 0.8);
+    border-color: variaveis.$corDeFundoBotaoSecundario;
 
     &:hover {
       background-color: lighten(variaveis.$corTextoSecundario, 3%);

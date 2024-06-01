@@ -1,0 +1,71 @@
+@use 'shows';
+@use 'variaveis';
+
+.timeline {
+  padding: 20px;
+  background-color: variaveis.$corDeFundo;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: variaveis.$corDeFundoBotaoSecundario;
+  color: white;
+  border-radius: 10px;
+}
+
+.title--big {
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.timeline__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border-left: 4px solid variaveis.$corDeFundoBotaoSecundario;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.timeline__date {
+  margin-right: 20px;
+  background: variaveis.$corDeFundoBotaoSecundario;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.timeline__info h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.timeline__info p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
